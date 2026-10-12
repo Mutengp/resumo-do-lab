@@ -52,3 +52,76 @@ Este repositório contém a documentação e os registros práticos do laborató
 ### 5. Conexão e Validação do Ambiente
 - Obtenção do endereço IP público da máquina virtual criada.
 - Conexão remota utilizando **RDP** (para Windows) ou **SSH** (para Linux) para validar o funcionamento correto do ambiente provisionado.
+
+Desafio de Projeto: Configurando uma Instância de Banco de Dados no Microsoft Azure ☁️🗄️
+
+Repositório criado para documentar a resolução do desafio de projeto da DIO (Digital Innovation One), focado na criação e configuração de uma instância de Banco de Dados Relacional utilizando o Microsoft Azure SQL Database.
+
+🎯 Objetivo do Desafio
+
+O objetivo principal deste laboratório prático foi aplicar os conceitos de computação em nuvem na plataforma Azure, configurando um banco de dados SQL gerenciado, estruturando os recursos em um grupo dedicado e documentando todo o processo técnico de forma clara utilizando o GitHub.
+
+🛠️ Passo a Passo da Implementação
+
+Abaixo estão detalhadas as etapas realizadas durante a criação da instância de banco de dados no Portal do Azure:
+
+1. Acesso ao Azure SQL
+
+No Portal do Azure, navegue até a seção Azure SQL e selecione SQL databases.
+
+Clique no botão + Criar para iniciar o assistente de configuração de um novo banco de dados SQL.
+
+📷 <img width="1698" height="902" alt="image" src="https://github.com/user-attachments/assets/017722ee-5c98-475d-af75-b85f83bed61c" />
+
+
+2. Configurações Básicas (Noções Básicas)
+
+Na aba Noções Básicas, foram definidos os parâmetros fundamentais do projeto:
+
+Assinatura: Azure subscription 1
+
+Grupo de Recursos: Criado um novo grupo chamado free-db-teste para organizar os recursos correlacionados.
+
+Nome do Banco de Dados: Free-DB-Teste-1
+
+Servidor Lógico: Criado um novo servidor teste-teste-free-db na região Brazil South.
+
+Oferta: Aplicação da oferta gratuita disponível na assinatura para otimização de custos de estudo.
+
+📷 <img width="943" height="836" alt="image" src="https://github.com/user-attachments/assets/609509e2-aa4b-4dba-a5b8-3a058bf0e5d3" />
+
+
+3. Revisão e Criação (Examinar + criar)
+
+Antes de finalizar a implantação, a aba de resumo validou todas as configurações escolhidas:
+
+Método de Autenticação: Autenticação somente do Microsoft Entra (zleo.gp@gmail.com).
+
+Computação + Armazenamento: General Purpose - Sem servidor - Série Standard (Gen5), 2 vCores, 32 GB de Armazenamento.
+
+Redundância: Armazenamento de backup com redundância local.
+
+📷 <img width="952" height="1142" alt="image" src="https://github.com/user-attachments/assets/02cffcd2-42fe-4b52-92a0-a096ed8c2aa2" />
+
+
+4. Conclusão da Implantação
+
+Após a validação, o deploy foi executado com sucesso. O Azure provisionou automaticamente os recursos necessários (o banco de dados, a regra de firewall e o servidor lógico associado).
+
+📷 <img width="1305" height="897" alt="image" src="https://github.com/user-attachments/assets/94beab64-3662-477a-b4a5-d73d4acb2957" />
+
+
+💡 Dicas e Conclusões Técnicas
+
+Gerenciamento Simplificado (PaaS): O uso do Azure SQL Database demonstra na prática as vantagens do modelo PaaS (Platform as a Service), onde a Microsoft gerencia toda a infraestrutura subjacente, backups e alta disponibilidade, permitindo que o desenvolvedor foque totalmente na modelagem e nos dados.
+
+Organização de Recursos: Utilizar Grupos de Recursos facilita drasticamente o ciclo de vida dos projetos em nuvem, permitindo monitorar custos, aplicar políticas e excluir todos os componentes associados de forma limpa quando necessário.
+
+📁 Estrutura do Repositório
+
+├── images/             # Contém as capturas de tela do processo
+└── README.md           # Documentação principal do desafio
+
+
+
+
